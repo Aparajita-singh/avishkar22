@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Agri PAge</title>
+    <link rel="stylesheet" href="prov.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@100;200;300&display=swap" 
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-
+    free@6.2.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://fontawesome.com/v4/icon/phone-square">
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="prov.html"><img src="images2.0/LOGO2.jpg"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+ 
+                <ul>
+                    <li><a href="prov.html">HOME</a></li>
+                    <li><a href="about us.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="opportunities.html">OPPORTUNITIES</a></li>
+                   
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()" ></i>
+        </nav>
+
+        <h1>CONTACT US</h1>      
+      
+    </section>
+  
+<!----Contact Us---->
+<section class="contact-us">
+     
+      <div class="row">
+            <div class="contact-col">
+                  <div>
+                     <i class="fa fa-home"></i>
+                       <span>
+                          <h5>123,xyz marg,</h5>
+                           <p>sardarpura,UP</p>
+                       </span>
+                    </div>
+                    <div>
+                    <i class="fa fa-phone-square" aria-hidden="true"></i>
+                       <span>
+                          <h5>1238976548</h5>
+                           <p>Monday to Saturday,9AM to 9PM</p>
+                       </span>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope-o"></i>
+                        <span>
+                           <h5>priyankashekharsharma@gmail.com</h5>
+                            <p>Email us your query</p>
+                        </span>
+                    </div>
+            </div>
+            
+        <div class="contact-col">
+                  
+                <form action="formhandler.php" method="post">
+                    <input type="text"  name="name" placeholder="Enter your name" required>
+                    <input type="email" name="email" placeholder="Enter your Email address" required>
+                    <input type="text"  name="subject"placeholder="Enter your subject" required>
+                    <textarea  rows="8" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+
+
+            
+         </div>
+    </div>
+
+</section>
+
+<!-----Footer------>
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are known everywhere..start working with us now..<br> also raise fund to teach your child.
+        We provide the best fertilizers,pesticides,seeds and everything you need to produce the best grain at minimal cost </p>
+        <div class="icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-facebook"></i>
+        </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!----JavaScript for Toggle Menu---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+
+</body>
+</html>
